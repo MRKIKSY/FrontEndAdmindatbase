@@ -17,11 +17,19 @@ const SignUp = () => {
             email: email,
             password: password,
         };
+        console.log("Attempting to register with data:", userData);
 
         try {
-            const response = await Axios.post("https://restfulapi-7p00.onrender.com/api/users/signup", userData);
+            // Notice the correction in the Axios call. The closing parenthesis was misplaced.
+            const response = await Axios.post("https://crudapi-ixjj.onrender.com/api/users/register", userData, {
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            });
+            
             if (response.data.token || response.status === 201) { 
                 setRegisterStatus("ACCOUNT CREATED SUCCESSFULLY");
+                console.log(registerStatus);
                 setTimeout(() => {
                     navigate('/login');
                 }, 2000);

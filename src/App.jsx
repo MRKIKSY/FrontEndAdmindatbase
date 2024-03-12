@@ -15,6 +15,7 @@ function App() {
     <div className="app">
       <BrowserRouter>
         <Routes>
+          <Route path='/' element={<Home />}></Route>
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
 
@@ -23,7 +24,7 @@ function App() {
               <Dashboard />
             </RequireToken>
           }>
-            <Route path='/' element={<Home />}></Route>
+           
             <Route path='/employee' element={<Employee />}></Route>
             <Route path='/profile' element={<Profile />}></Route>
             <Route path='/create' element={<AddEmployee />}></Route>

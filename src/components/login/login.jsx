@@ -12,7 +12,7 @@ const Login = () => {
     const login = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post("https://restfulapi-7p00.onrender.com/api/users/login", {
+            const response = await axios.post("https://crudapi-ixjj.onrender.com/api/users/login", {
                 email: email,
                 password: password,
             });
