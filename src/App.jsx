@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./components/login/login.jsx";
-import SignUp from "./components/signup/signup.jsx";
+import Register from "./components/signup/register.jsx";
 import { RequireToken } from './components/Auth/Auth.jsx'
 import Dashboard from "./components/dashboard/dashboard.jsx";
 import Home from "./components/home.jsx";
@@ -17,7 +17,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />}></Route>
           <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<SignUp />} />
+          <Route path="/register" element={<Register />} />
 
           <Route path='/' element={
             <RequireToken>

@@ -2,7 +2,7 @@ import  { useState } from "react";
 import Axios from "axios";
 import { useNavigate } from 'react-router-dom';
 
-const SignUp = () => {
+const Register = () => {
     const [email, setEmail] = useState("");
     const [name, setName] = useState("");
     const [password, setPassword] = useState("");
@@ -20,7 +20,7 @@ const SignUp = () => {
         console.log("Attempting to register with data:", userData);
 
         try {
-            // Notice the correction in the Axios call. The closing parenthesis was misplaced.
+            
             const response = await Axios.post("https://crudapi-ixjj.onrender.com/api/users/register", userData, {
                 headers: {
                     'Content-Type': 'application/json',
@@ -107,4 +107,4 @@ const SignUp = () => {
     );
 };
 
-export default SignUp;
+export default Register;
