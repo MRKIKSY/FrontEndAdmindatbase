@@ -74,7 +74,7 @@ const Login = () => {
                         <a href="/#" className="text-body mb-3 d-block">Forgot password?</a>
                         <div className="text-center">
                             <button type="button" className="btn btn-primary btn-lg" onClick={login}>Login</button>
-                            <p className="small fw-bold mt-2 pt-1 mb-0">Dont have an account? <a href="signup" className="link-danger">Sign Up</a></p>
+                            <p className="small fw-bold mt-2 pt-1 mb-0">Dont have an account? <a href="register" className="link-danger">Register</a></p>
                         </div>
                     </form>
                 </div>
