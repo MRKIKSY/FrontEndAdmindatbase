@@ -21,7 +21,7 @@ function EditEmployee() {
     };
 
     useEffect(() => {
-        axios.get("http://localhost:3001/get/" + id)
+        axios.get("http://localhost:5173/get/" + id)
             .then(res => {
                 console.log(res.data.Result[0])
                 setemployee(res.data.Result[0]);
@@ -33,7 +33,7 @@ function EditEmployee() {
         e.preventDefault();
 
         try {
-            await axios.put(`http://localhost:3001/update/${employeeId}`, employee);
+            await axios.put(`http://localhost:5173/update/${employeeId}`, employee);
             navigate("/");
         } catch (err) {
             console.log(err);

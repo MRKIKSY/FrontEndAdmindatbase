@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./components/login/login.jsx";
-import Register from "./components/signup/register.jsx";
+import Register from "./components/register/register.jsx";
 import { RequireToken } from './components/Auth/Auth.jsx'
 import Dashboard from "./components/dashboard/dashboard.jsx";
 import Home from "./components/home.jsx";

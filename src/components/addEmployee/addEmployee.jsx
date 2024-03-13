@@ -13,7 +13,7 @@ function AddEmployee() {
 
     const create = (e) => {
         e.preventDefault();
-        axios.post("http://localhost:3001/create", {
+        axios.post("http://localhost:5173/create", {
             name: name,
             email: email,
             address: address,

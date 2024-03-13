@@ -12,7 +12,7 @@ function Employee() {
     const [data, setData] = useState([])
 
     useEffect(() => {
-        axios.get('http://localhost:3001/getEmployee')
+        axios.get('http://localhost:5173/getEmployee')
             .then(res => {
                 if (res.data.Status === "Success") {
                     setData(res.data.Result);
@@ -24,7 +24,7 @@ function Employee() {
     }, [])
 
     const handleDelete = (id) => {
-        axios.delete('http://localhost:3001/delete/' + id)
+        axios.delete('http://localhost:5173/delete/' + id)
             .then(res => {
                 if (res.data.Status === "Success") {
                     window.location.reload(true);
