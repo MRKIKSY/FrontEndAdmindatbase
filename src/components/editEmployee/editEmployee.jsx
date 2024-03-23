@@ -21,7 +21,7 @@ function EditEmployee() {
     };
 
     useEffect(() => {
-        axios.get("adminapi.onrender.com/get/" + id)
+        axios.get(adminapi-fcjc.onrender.com//get/" + id)
             .then(res => {
                 console.log(res.data.Result[0])
                 setemployee(res.data.Result[0]);
