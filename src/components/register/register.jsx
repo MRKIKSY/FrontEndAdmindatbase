@@ -21,7 +21,7 @@ const Register = () => {
 
         try {
             
-            const response = await Axios.post("https://adminapi.onrender.com/api/users/register", userData, {
+            const response = await Axios.post("https://adminapi-fcjc.onrender.com/register", userData, {
                 headers: {
                     'Content-Type': 'application/json',
                 },
