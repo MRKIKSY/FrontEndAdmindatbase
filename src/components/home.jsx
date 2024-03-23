@@ -7,17 +7,17 @@ function Home() {
     const [salary, setSalary] = useState()
 
     useEffect(() => {
-        axios.get('https://adminapi.onrender.com/adminCount')
+        axios.get('https://adminapi-fcjc.onrender.com/adminCount')
             .then(res => {
                 setAdminCount(res.data[0].admin)
             }).catch(err => console.log(err));
 
-        axios.get('http://adminapi.onrender.com/employeeCount')
+        axios.get('https://adminapi-fcjc.onrender.com/employeeCount')
             .then(res => {
                 setEmployeeCount(res.data[0].employee)
             }).catch(err => console.log(err));
 
-        axios.get('http://localhost:5173/salary')
+        axios.get('https://adminapi-fcjc.onrender.com/salary')
             .then(res => {
                 setSalary(res.data[0].sumOfSalary)
             }).catch(err => console.log(err));
