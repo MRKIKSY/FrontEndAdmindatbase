@@ -33,7 +33,7 @@ function EditEmployee() {
         e.preventDefault();
 
         try {
-            await axios.put(`https://adminapi.onrender.com/update/${employeeId}`, employee);
+            await axios.put(`https://adminapi-fcjc.onrender.com//update/${employeeId}`, employee);
             navigate("/");
         } catch (err) {
             console.log(err);
