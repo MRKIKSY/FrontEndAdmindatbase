@@ -20,14 +20,14 @@ function EditEmployee() {
         setemployee((prev) => ({ ...prev, [e.target.name]: e.target.value }));
     };
 
-    useEffect(() => {
-        axios.get(adminapi-fcjc.onrender.com//get/" + id)
-            .then(res => {
-                console.log(res.data.Result[0])
-                setemployee(res.data.Result[0]);
-            })
-            .catch(err => console.log(err))
-    }, []);
+  useEffect(() => {
+    axios.get("adminapi-fcjc.onrender.com/get/" + id)
+        .then(res => {
+            console.log(res.data.Result[0]);
+            setemployee(res.data.Result[0]);
+        })
+        .catch(err => console.log(err));
+}, []);
 
     const handleUpdate = async (e) => {
         e.preventDefault();
