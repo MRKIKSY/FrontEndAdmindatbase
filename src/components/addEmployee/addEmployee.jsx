@@ -13,7 +13,7 @@ function AddEmployee() {
 
     const create = (e) => {
         e.preventDefault();
-        axios.post("https://adminapi.onrender.com/create", {
+        axios.post("https://adminapi-fcjc.onrender.com/create", {
             name: name,
             email: email,
             address: address,
