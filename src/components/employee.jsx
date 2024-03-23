@@ -12,7 +12,7 @@ function Employee() {
     const [data, setData] = useState([])
 
     useEffect(() => {
-        axios.get('https://adminapi.onrender.com/getEmployee')
+        axios.get('https://adminapi-fcjc.onrender.com/getEmployee')
             .then(res => {
                 if (res.data.Status === "Success") {
                     setData(res.data.Result);
