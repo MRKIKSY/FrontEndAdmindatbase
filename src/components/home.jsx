@@ -7,12 +7,12 @@ function Home() {
     const [salary, setSalary] = useState()
 
     useEffect(() => {
-        axios.get('http://localhost:5173/adminCount')
+        axios.get('https://adminapi.onrender.com/adminCount')
             .then(res => {
                 setAdminCount(res.data[0].admin)
             }).catch(err => console.log(err));
 
-        axios.get('http://localhost:5173/employeeCount')
+        axios.get('http://adminapi.onrender.com/employeeCount')
             .then(res => {
                 setEmployeeCount(res.data[0].employee)
             }).catch(err => console.log(err));
