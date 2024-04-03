@@ -7,7 +7,8 @@ import Home from "./components/home.jsx";
 import Employee from "./components/employee.jsx";
 import Profile from "./components/profile.jsx";
 import AddEmployee from "./components/addEmployee/addEmployee.jsx";
-import EditEmployee from './components/editEmployee/editEmployee.jsx
+import EditEmployee from './components/editEmployee/editEmployee.jsx';
+
 
 function App() {
   return (
