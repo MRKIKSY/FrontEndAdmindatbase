@@ -12,7 +12,7 @@ const Login = () => {
     const login = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post("https://adminapi-fcjc.onrender.com/login", {
+            const response = await axios.post("https://frontendadmindatbase.onrender.com/login", {
                 email: email,
                 password: password,
             });
